@@ -21,7 +21,7 @@ const App = () => {
 
     try {
       const parsedJson = JSON.parse(jsonInput);
-      const response = await axios.post('http://localhost:8000/bfhl', parsedJson);
+      const response = await axios.post('https://bajaj-finserv-backend-production.up.railway.app/bfhl', parsedJson);
       console.log(response);
       setResponseData(response.data);
     } catch (error) {
